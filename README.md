@@ -41,10 +41,25 @@
 
 > 前置条件：申请麦当劳 MCP Token（[指南](https://github.com/M-China/mcd-mcp-server)）
 
-### 在 WorkBuddy 中使用
+### 一键安装（推荐）
 
-1. 打开 WorkBuddy → 【专家·技能·连接器】→【连接器】→【自定义连接器】→【配置MCP】
-2. 填入：
+不需要手动配置任何 JSON，把 `skill/` 目录装进 WorkBuddy 技能目录（`~/.workbuddy/skills/`），然后运行：
+
+```bash
+python skill/scripts/setup_mcp.py <你的MCP_TOKEN>
+```
+
+脚本会自动把 mcd-mcp 写入 WorkBuddy 的 MCP 配置（只合并这一项，不影响已有连接器，修改前自动备份）。最后在 WorkBuddy →【连接器】→【自定义连接器】里启用（Trust）mcd-mcp，开聊：
+
+```
+「不知道吃啥，25 块以内，看着办」
+「想吃炸鸡，配点喝的」
+「最近上什么新品了？」
+```
+
+### 手动安装（备选）
+
+如果你偏好手动配置：WorkBuddy →【专家·技能·连接器】→【连接器】→【自定义连接器】→【配置MCP】，填入：
 
 ```json
 {
@@ -60,13 +75,7 @@
 }
 ```
 
-3. 启用 mcd-mcp 连接器，然后安装本 Skill（`skill/` 目录），对它说：
-
-```
-「不知道吃啥，25 块以内，看着办」
-「想吃炸鸡，配点喝的」
-「最近上什么新品了？」
-```
+保存后启用 mcd-mcp 连接器即可。
 
 ## 真实演示
 

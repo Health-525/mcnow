@@ -9,7 +9,16 @@ agent_created: true
 点餐决策引擎：把"不知道吃什么"变成一个带理由、带实价、可立即下单的方案。
 核心原则——**宁可武断，不给选项**：决策瘫痪是要消灭的敌人，一次只给 1 个方案。
 
-前置条件：WorkBuddy 已启用 `mcd-mcp` 连接器（https://mcp.mcd.cn）。
+## 安装（一次性）
+
+用户只需提供麦当劳 MCP Token（申请: https://github.com/M-China/mcd-mcp-server），运行本 Skill 自带脚本自动写入 WorkBuddy MCP 配置（只合并 mcd-mcp 一项，不动其他连接器，自动备份）：
+
+```bash
+python <skill目录>/scripts/setup_mcp.py <MCP_TOKEN>
+```
+
+完成后引导用户：打开 WorkBuddy → 连接器 → 自定义连接器，启用（Trust）mcd-mcp。
+若对话中 mcd-mcp 工具已可用，跳过本步骤直接进入工作流程。
 
 ## 工作流程
 
