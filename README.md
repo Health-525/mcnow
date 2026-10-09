@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.jpg" alt="麦上吃 McNow" width="180"/>
+
 # 麦上吃 · McNow
 
 **不想选？麦上吃。**
