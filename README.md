@@ -119,7 +119,6 @@ mcnow/
 ├── CONTEST_DECLARATION.md        # 参赛声明（官方原样）
 ├── MCP_INTEGRATION.md            # MCP 工具集成说明
 ├── workbuddy.md                  # WorkBuddy 开发对话上下文
-├── docs/                         # 文档索引
 └── skill/                        # WorkBuddy Skill（通过官方 skill-creator 校验）
     ├── SKILL.md                  # Skill 定义
     ├── references/
