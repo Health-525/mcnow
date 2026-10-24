@@ -10,3 +10,11 @@ desktop.ini
 # 编辑器
 .vscode/
 .idea/
+
+# Python 运行缓存
+__pycache__/
+*.pyc
+
+# 本地连接器凭证与备份
+mcp.json
+mcp.json.bak.*
